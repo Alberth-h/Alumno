@@ -22,5 +22,11 @@ namespace Alumno
             Direccion = "Sin asignar";
             Telefono = "Sin asignar";
         }
+
+        public Alumno(string nombre, string matricula)
+        {
+            Nombre = nombre;
+            Matricula = matricula;
+        }
     }
 }

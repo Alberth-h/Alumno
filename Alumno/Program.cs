@@ -10,21 +10,32 @@ namespace Alumno
     {
         static void Main(string[] args)
         {
-            Alumno alumno = new Alumno();
+            Alumno alumno1 = new Alumno();
 
-            alumno.Nombre = "Alberto";
-            alumno.Matricula = "189180";
-            alumno.FechaNacimiento = "25/07/00";
-            alumno.Direccion = "Cuauhtemoc #80 Laureles";
-            alumno.Telefono = "6421122188";
+            Console.WriteLine("Alumno 1:");
+            Console.WriteLine("Nombre: " + alumno1.Nombre);
+            Console.WriteLine("Matricula: " + alumno1.Matricula);
 
-            Console.WriteLine("Alumno:");
-            Console.WriteLine("Nombre: " + alumno.Nombre);
-            Console.WriteLine("Matricula: " + alumno.Matricula);
-            Console.WriteLine("Fecha de Nacimiento: " + alumno.FechaNacimiento);
-            Console.WriteLine("Direccion: " + alumno.Direccion);
-            Console.WriteLine("Telefono: " + alumno.Telefono);
+            //Construstor sin parametros
+            //Despues establece atributos
+            Alumno alumno2 = new Alumno();
 
+            Console.WriteLine("Alumno 2:");
+            Console.WriteLine("Nombre: " + alumno2.Nombre);
+            Console.WriteLine("Matricula: " + alumno2.Matricula);
+
+            alumno2.Nombre = "Alberto";
+            alumno2.Matricula = "189180";
+
+            Console.WriteLine("Alumno 2:");
+            Console.WriteLine("Nombre: " + alumno2.Nombre);
+            Console.WriteLine("Matricula: " + alumno2.Matricula);
+
+            Alumno alumno3 = new Alumno("Ana", "165689");
+            Console.WriteLine("Alumno 3:");
+            Console.WriteLine("Nombre: " + alumno3.Nombre);
+            Console.WriteLine("Matricula: " + alumno3.Matricula);
+            
             Console.Read();
         }
     }
